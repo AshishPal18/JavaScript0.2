@@ -47,7 +47,7 @@ function one(){
         console.log(username)
     }
 
-    // console.log(address) this will now print bcoz of scope and address is present in function which is not accessible out of scope.
+    // console.log(address) this will not print bcoz of scope and address is present in function which is not accessible out of scope.
     two()
 }
 one()
