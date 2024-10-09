@@ -151,3 +151,45 @@ MyLang.forEach((item)=>{
 // Javascript
 //Python
 //C++
+
+// filter 
+
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+// const newNums = myNums.filter((items)=>{
+//     return items>5
+// })
+//console.log(newNums)
+
+// Accessing numbers for an array by using forEach.
+const newNums = []
+myNums.forEach((nums)=>{
+    if(nums>5){
+        newNums.push(nums)
+    }
+})
+
+console.log(newNums)
+
+// Map
+
+const MyNums = [1,2,3,4,5,6,7,8,9,10]
+const newNums1 = MyNums.map((num)=>{
+    return num + 10
+})
+console.log(newNums1)
+
+
+// reduce
+
+const Nums = [1,2,3,4,5]
+const MyTotal = Nums.reduce(function(acc,currVal){
+    console.log(`acc: ${acc} and currVal: ${currVal}`);
+    return acc + currVal
+},0)
+console.log(MyTotal)
+
+// USING REDUCE FUNCTION WITH ARROW FUNCTION
+
+const mYTOTAL = Nums.reduce((acc,curr)=>acc+curr,0)
+console.log(mYTOTAL)
